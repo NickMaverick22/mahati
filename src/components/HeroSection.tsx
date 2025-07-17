@@ -1,0 +1,61 @@
+import { Button } from "@/components/ui/button";
+import { Calendar, Send } from "lucide-react";
+import mahatiPortrait from "@/assets/mahati-portrait.jpg";
+
+const HeroSection = () => {
+  return (
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Background gradient */}
+      <div className="absolute inset-0 gradient-warm opacity-10"></div>
+      
+      <div className="section-container relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Text content */}
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+                Mahati Bouaziz
+              </h1>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                Soin du système nerveux & pratiques de guérison à La Marsa
+              </p>
+              <p className="text-2xl font-medium text-gradient">
+                Reconnecte-toi à ton corps. Retrouve ton calme intérieur.
+              </p>
+            </div>
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button className="btn-primary flex items-center gap-2">
+                <Calendar className="w-5 h-5" />
+                Réserver une séance
+              </Button>
+              <Button variant="outline" className="btn-secondary flex items-center gap-2">
+                <Send className="w-5 h-5" />
+                Rejoindre le canal Telegram gratuit
+              </Button>
+            </div>
+          </div>
+          
+          {/* Portrait image */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative">
+              <div className="w-80 h-96 rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src={mahatiPortrait} 
+                  alt="Mahati Bouaziz - Praticienne du système nerveux"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-accent rounded-full opacity-20"></div>
+              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-primary rounded-full opacity-20"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
