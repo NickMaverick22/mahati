@@ -44,18 +44,28 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-lg">Contact</h4>
             <div className="space-y-3">
-              <div className="flex items-center gap-3">
+              <a href="tel:+21620190555" className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                 <Phone className="w-5 h-5" />
-                <span className="text-primary-foreground/80">+216 20 190 555</span>
-              </div>
-              <div className="flex items-center gap-3">
+                <span>+216 20 190 555</span>
+              </a>
+              <a 
+                href="https://maps.app.goo.gl/Pp22VGCSTEKDeb9U6" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+              >
                 <MapPin className="w-5 h-5" />
-                <span className="text-primary-foreground/80">Ain Zaghouen, Tunisie</span>
-              </div>
-              <div className="flex items-center gap-3">
+                <span>Ain Zaghouen, Tunisie</span>
+              </a>
+              <a 
+                href="https://instagram.com/mahati_bouaziz" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+              >
                 <Instagram className="w-5 h-5" />
-                <span className="text-primary-foreground/80">@mahati_bouaziz</span>
-              </div>
+                <span>@mahati_bouaziz</span>
+              </a>
             </div>
           </div>
           
@@ -63,20 +73,24 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-lg">Prête à commencer ?</h4>
             <div className="space-y-3">
-              <Button 
-                variant="outline" 
-                className="w-full bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-              >
-                <Calendar className="w-4 h-4 mr-2" />
-                Réserver maintenant
-              </Button>
-              <Button 
-                variant="outline" 
-                className="w-full bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-              >
-                <Send className="w-4 h-4 mr-2" />
-                Canal gratuit
-              </Button>
+              <a href="#booking">
+                <Button 
+                  variant="outline" 
+                  className="w-full bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                >
+                  <Calendar className="w-4 h-4 mr-2" />
+                  Réserver maintenant
+                </Button>
+              </a>
+              <a href="#telegram">
+                <Button 
+                  variant="outline" 
+                  className="w-full bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                >
+                  <Send className="w-4 h-4 mr-2" />
+                  Canal gratuit
+                </Button>
+              </a>
             </div>
           </div>
         </div>

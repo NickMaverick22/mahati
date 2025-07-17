@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Send } from "lucide-react";
-import mahatiPortrait from "@/assets/mahati-portrait.jpg";
+import mahatiPortrait from "/lovable-uploads/4eb4d876-ade7-46d4-b68c-9556155cc9da.png";
 
 const HeroSection = () => {
   return (
