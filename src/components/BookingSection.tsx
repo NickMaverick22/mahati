@@ -71,47 +71,55 @@ const BookingSection = () => {
                 <CardTitle>Formulaire de réservation</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <Label htmlFor="prenom">Prénom *</Label>
-                    <Input id="prenom" placeholder="Ton prénom" />
+                <form action="https://2f9f6n.share-eu1.hsforms.com/2E0h3tt_cTBi1APLa4Pynjw" method="POST">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <Label htmlFor="firstname">Prénom *</Label>
+                      <Input id="firstname" name="firstname" placeholder="Ton prénom" required />
+                    </div>
+                    <div>
+                      <Label htmlFor="lastname">Nom *</Label>
+                      <Input id="lastname" name="lastname" placeholder="Ton nom de famille" required />
+                    </div>
                   </div>
+                  
                   <div>
-                    <Label htmlFor="telephone">Téléphone *</Label>
-                    <Input id="telephone" placeholder="+216 XX XXX XXX" />
+                    <Label htmlFor="phone">Téléphone *</Label>
+                    <Input id="phone" name="phone" placeholder="+216 XX XXX XXX" required />
                   </div>
-                </div>
-                
-                <div>
-                  <Label htmlFor="seance">Type de séance *</Label>
-                  <Select>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Choisis ton accompagnement" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="reset">Reset & Reconnexion</SelectItem>
-                      <SelectItem value="guerison">Guérison des Racines</SelectItem>
-                      <SelectItem value="confiance">Confiance Active</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-                
-                <div>
-                  <Label htmlFor="message">Message</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Partage-nous ce qui t'amène (optionnel)"
-                    rows={4}
-                  />
-                </div>
-                
-                <Button className="btn-primary w-full">
-                  Envoyer ma demande
-                </Button>
-                
-                <p className="text-xs text-muted-foreground text-center">
-                  Tu recevras une confirmation par WhatsApp dans les 24h
-                </p>
+                  
+                  <div>
+                    <Label htmlFor="service_type">Type de séance *</Label>
+                    <Select name="service_type" required>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Choisis ton accompagnement" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="reset">Reset & Reconnexion</SelectItem>
+                        <SelectItem value="guerison">Guérison des Racines</SelectItem>
+                        <SelectItem value="confiance">Confiance Active</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  
+                  <div>
+                    <Label htmlFor="message">Message</Label>
+                    <Textarea 
+                      id="message" 
+                      name="message"
+                      placeholder="Partage-nous ce qui t'amène (optionnel)"
+                      rows={4}
+                    />
+                  </div>
+                  
+                  <Button type="submit" className="btn-primary w-full">
+                    Envoyer ma demande
+                  </Button>
+                  
+                  <p className="text-xs text-muted-foreground text-center">
+                    Tu recevras une confirmation par WhatsApp dans les 24h
+                  </p>
+                </form>
               </CardContent>
             </Card>
           </div>
