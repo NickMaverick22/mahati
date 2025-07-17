@@ -17,7 +17,7 @@ const HeroSection = () => {
                 Mahati Bouaziz
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Soin du système nerveux & pratiques de guérison à La Marsa
+                Soin du système nerveux & pratiques de guérison à Ain Zaghouen
               </p>
               <p className="text-2xl font-medium text-gradient">
                 Reconnecte-toi à ton corps. Retrouve ton calme intérieur.

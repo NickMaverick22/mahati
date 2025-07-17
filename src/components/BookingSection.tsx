@@ -34,7 +34,7 @@ const BookingSection = () => {
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-primary mt-1" />
                     <div>
-                      <p className="font-medium">Présentiel à La Marsa</p>
+                      <p className="font-medium">Présentiel à Ain Zaghouen</p>
                       <a 
                         href="https://maps.app.goo.gl/Pp22VGCSTEKDeb9U6" 
                         target="_blank" 

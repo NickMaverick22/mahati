@@ -19,7 +19,7 @@ const Footer = () => {
               Praticienne du système nerveux
             </p>
             <p className="text-primary-foreground/80">
-              Séances de guérison à La Marsa
+              Séances de guérison à Ain Zaghouen
             </p>
           </div>
           
@@ -47,6 +47,10 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5" />
                 <span className="text-primary-foreground/80">+216 20 190 555</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <MapPin className="w-5 h-5" />
+                <span className="text-primary-foreground/80">Ain Zaghouen, Tunisie</span>
               </div>
               <div className="flex items-center gap-3">
                 <Instagram className="w-5 h-5" />

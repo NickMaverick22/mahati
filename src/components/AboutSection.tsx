@@ -13,7 +13,7 @@ const AboutSection = () => {
               <div className="rounded-2xl overflow-hidden shadow-xl">
                 <img 
                   src={therapyRoom} 
-                  alt="Espace de thérapie à La Marsa"
+                  alt="Espace de thérapie à Ain Zaghouen"
                   className="w-full h-80 object-cover"
                 />
               </div>
@@ -34,7 +34,7 @@ const AboutSection = () => {
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Je guide des femmes vers un retour à elles-mêmes à travers le corps, 
-                les sensations et l'espace sûr de mes séances à La Marsa.
+                les sensations et l'espace sûr de mes séances à Ain Zaghouen.
               </p>
             </div>
             
