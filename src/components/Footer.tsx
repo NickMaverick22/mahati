@@ -49,10 +49,6 @@ const Footer = () => {
                 <span className="text-primary-foreground/80">+216 20 190 555</span>
               </div>
               <div className="flex items-center gap-3">
-                <MapPin className="w-5 h-5" />
-                <span className="text-primary-foreground/80">La Marsa, Tunisie</span>
-              </div>
-              <div className="flex items-center gap-3">
                 <Instagram className="w-5 h-5" />
                 <span className="text-primary-foreground/80">@mahati_bouaziz</span>
               </div>

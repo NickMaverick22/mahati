@@ -35,7 +35,14 @@ const BookingSection = () => {
                     <MapPin className="w-5 h-5 text-primary mt-1" />
                     <div>
                       <p className="font-medium">Présentiel à La Marsa</p>
-                      <p className="text-sm text-muted-foreground">Voir sur Google Maps</p>
+                      <a 
+                        href="https://maps.app.goo.gl/Pp22VGCSTEKDeb9U6" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm text-primary hover:text-primary/80 transition-colors"
+                      >
+                        Voir sur Google Maps
+                      </a>
                     </div>
                   </div>
                   
