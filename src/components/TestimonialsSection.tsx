@@ -6,9 +6,12 @@ const TestimonialsSection = () => {
     <section className="py-20">
       <div className="section-container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 flex items-center justify-center gap-2">
-            🎥 Ce que disent les femmes après leur séance
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+            Témoignages en vidéo
           </h2>
+          <p className="text-lg text-muted-foreground">
+            Des femmes partagent leur expérience après leur accompagnement avec Mahati.
+          </p>
         </div>
         
         <div className="max-w-4xl mx-auto">
@@ -20,10 +23,10 @@ const TestimonialsSection = () => {
                     <Play className="w-10 h-10 text-primary ml-1" />
                   </div>
                   <p className="text-lg font-medium text-primary">
-                    Témoignages vidéo
+                    Vidéo à venir
                   </p>
                   <p className="text-muted-foreground">
-                    Vidéo à venir - Espace réservé pour les témoignages
+                    Cette section accueillera bientôt les témoignages de nos clientes
                   </p>
                 </div>
               </div>

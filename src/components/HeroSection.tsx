@@ -58,7 +58,6 @@ const HeroSection = () => {
               
               {/* Mahati Info */}
               <div className="space-y-4">
-                <h3 className="text-2xl font-bold">Mahati</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   Thérapeute holistique certifiée, je guide des femmes vers un retour à elles-mêmes 
                   à travers des méthodes douces et profondes dans un espace sûr à Ain Zaghouen.
@@ -67,20 +66,16 @@ const HeroSection = () => {
                 {/* Certifications */}
                 <div className="mt-6">
                   <h4 className="font-semibold mb-3 text-primary">Certifications</h4>
-                  <div className="grid grid-cols-1 gap-2 text-sm text-muted-foreground">
-                    <div className="space-y-1">
-                      <p>Access Bars Facilitator</p>
-                      <p>Access FaceLift Practitioner</p>
-                      <p>ThetaHealing</p>
-                      <p>Constellation Familiale</p>
-                      <p>PNL - Coaching</p>
-                    </div>
-                    <div className="space-y-1 mt-2">
-                      <p>Hypnose Ericksonienne</p>
-                      <p>Usui Reiki - SHINPIDEN</p>
-                      <p>Body Access</p>
-                      <p>Body Process</p>
-                    </div>
+                  <div className="flex flex-wrap gap-2 text-sm">
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Access Bars Facilitator</span>
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Access FaceLift Practitioner</span>
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">ThetaHealing</span>
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Constellation Familiale</span>
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">PNL - Coaching</span>
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Reiki Master Teacher</span>
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Hypnose</span>
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Body Access</span>
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Soins énergétiques visage</span>
                   </div>
                 </div>
               </div>

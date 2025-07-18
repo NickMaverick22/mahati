@@ -29,7 +29,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-secondary/30">
+    <section id="services-section" className="py-20 bg-secondary/30">
       <div className="section-container">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">
