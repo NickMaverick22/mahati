@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Zap, Heart, Sparkles, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
   const services = [
@@ -58,10 +59,12 @@ const ServicesSection = () => {
                 <p className="text-primary font-medium italic">
                   {service.subtitle}
                 </p>
-                <Button className="btn-primary w-full flex items-center gap-2">
-                  <Calendar className="w-4 h-4" />
-                  Réserver
-                </Button>
+                <Link to="/booking">
+                  <Button className="btn-primary w-full flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    Réserver
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           ))}

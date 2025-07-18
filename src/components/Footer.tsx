@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Instagram, MapPin, Phone, Calendar, Send } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const quickLinks = [
-    { label: "Réserver", href: "#booking" },
+    { label: "Réserver", href: "/booking" },
     { label: "Canal gratuit", href: "#telegram" },
     { label: "Voir les offres", href: "#services" },
   ];
@@ -70,29 +71,29 @@ const Footer = () => {
           </div>
           
           {/* CTA */}
-          <div className="space-y-4">
-            <h4 className="font-semibold text-lg">Prête à commencer ?</h4>
-            <div className="space-y-3">
-              <a href="#booking">
-                <Button 
-                  variant="outline" 
-                  className="w-full bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-                >
-                  <Calendar className="w-4 h-4 mr-2" />
-                  Réserver maintenant
-                </Button>
-              </a>
-              <a href="#telegram">
-                <Button 
-                  variant="outline" 
-                  className="w-full bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-                >
-                  <Send className="w-4 h-4 mr-2" />
-                  Canal gratuit
-                </Button>
-              </a>
+            <div className="space-y-4">
+              <h4 className="font-semibold text-lg">Prête à commencer ?</h4>
+              <div className="space-y-4">
+                <Link to="/booking">
+                  <Button 
+                    variant="outline" 
+                    className="w-full bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                  >
+                    <Calendar className="w-4 h-4 mr-2" />
+                    📅 Réserver maintenant
+                  </Button>
+                </Link>
+                <a href="#telegram">
+                  <Button 
+                    variant="outline" 
+                    className="w-full bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                  >
+                    <Send className="w-4 h-4 mr-2" />
+                    📲 Canal gratuit
+                  </Button>
+                </a>
+              </div>
             </div>
-          </div>
         </div>
         
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
