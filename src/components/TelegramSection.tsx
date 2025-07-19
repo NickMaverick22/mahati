@@ -62,10 +62,16 @@ const TelegramSection = () => {
               </div>
               
               <div className="text-center">
-                <Button className="btn-primary flex items-center gap-2 mx-auto">
-                  <Send className="w-5 h-5" />
-                  Rejoindre gratuitement
-                </Button>
+                <a 
+                  href="https://t.me/mahati_space369"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="btn-primary flex items-center gap-2 mx-auto">
+                    <Send className="w-5 h-5" />
+                    Rejoindre gratuitement
+                  </Button>
+                </a>
                 <p className="text-xs text-muted-foreground mt-3">
                   Accès immédiat • Communauté bienveillante • Contenu exclusif
                 </p>
