@@ -29,14 +29,12 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-6">
               <Link to="/booking">
                 <Button className="btn-primary flex items-center gap-2 shadow-lg hover:shadow-xl transition-all duration-300 min-h-[44px] px-6">
-                  <Calendar className="w-5 h-5" />
-                  📅 Réserver une séance
+                  Réserver une séance
                 </Button>
               </Link>
               <a href="https://t.me/mahati_space369" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="btn-secondary flex items-center gap-2 shadow-lg hover:shadow-xl transition-all duration-300 min-h-[44px] px-6">
-                  <Send className="w-5 h-5" />
-                  📲 Rejoindre le canal Telegram gratuit
+                  Rejoindre le canal Telegram gratuit
                 </Button>
               </a>
             </div>
