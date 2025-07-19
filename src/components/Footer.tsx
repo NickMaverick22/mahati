@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const quickLinks = [
     { label: "Réserver", href: "/booking" },
-    { label: "Canal gratuit", href: "#telegram" },
+    { label: "Canal gratuit", href: "https://t.me/mahati_space369" },
     { label: "Voir les offres", href: "#services" },
   ];
 
