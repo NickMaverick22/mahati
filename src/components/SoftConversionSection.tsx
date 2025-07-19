@@ -11,12 +11,9 @@ const SoftConversionSection = () => {
     <section className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto space-y-8">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <Leaf className="w-8 h-8 text-primary" />
-            <h2 className="text-3xl lg:text-4xl font-bold">
-              Tu ne sais pas par où commencer ?
-            </h2>
-          </div>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+            🌿 Tu ne sais pas par où commencer ?
+          </h2>
           
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p className="text-xl font-medium text-foreground">

@@ -73,23 +73,23 @@ const Footer = () => {
           {/* CTA */}
             <div className="space-y-4">
               <h4 className="font-semibold text-lg">Prête à commencer ?</h4>
-              <div className="space-y-6">
+              <div className="space-y-8">
                 <Link to="/booking">
                   <Button 
                     variant="outline" 
-                    className="w-full bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                    className="w-full bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary min-h-[44px]"
                   >
                     <Calendar className="w-4 h-4 mr-2" />
-                    Réserver maintenant
+                    📅 Réserver maintenant
                   </Button>
                 </Link>
-                <a href="#telegram">
+                <a href="https://t.me/mahati_space369" target="_blank" rel="noopener noreferrer">
                   <Button 
                     variant="outline" 
-                    className="w-full bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                    className="w-full bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary min-h-[44px]"
                   >
                     <Send className="w-4 h-4 mr-2" />
-                    Canal gratuit
+                    📲 Canal gratuit
                   </Button>
                 </a>
               </div>

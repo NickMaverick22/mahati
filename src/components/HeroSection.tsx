@@ -26,28 +26,30 @@ const HeroSection = () => {
             </div>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-6">
               <Link to="/booking">
-                <Button className="btn-primary flex items-center gap-2">
+                <Button className="btn-primary flex items-center gap-2 shadow-lg hover:shadow-xl transition-all duration-300 min-h-[44px] px-6">
                   <Calendar className="w-5 h-5" />
-                  Réserver une séance
+                  📅 Réserver une séance
                 </Button>
               </Link>
-              <Button variant="outline" className="btn-secondary flex items-center gap-2">
-                <Send className="w-5 h-5" />
-                Rejoindre le canal Telegram gratuit
-              </Button>
+              <a href="https://t.me/mahati_space369" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="btn-secondary flex items-center gap-2 shadow-lg hover:shadow-xl transition-all duration-300 min-h-[44px] px-6">
+                  <Send className="w-5 h-5" />
+                  📲 Rejoindre le canal Telegram gratuit
+                </Button>
+              </a>
             </div>
           </div>
           
-          {/* Portrait image and info */}
+          {/* Portrait image */}
           <div className="flex justify-center lg:justify-end">
             <div className="space-y-6">
               <div className="relative">
                 <div className="w-80 h-96 rounded-2xl overflow-hidden shadow-2xl">
                   <img 
                     src={mahatiPortrait} 
-                    alt="Mahati Bouaziz - Praticienne du système nerveux"
+                    alt="Cabinet de soin Ain Zaghouan - Mahati Bouaziz praticienne énergétique pour me reconnecter à mon corps"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -62,24 +64,24 @@ const HeroSection = () => {
                   Thérapeute holistique certifiée, je guide des femmes vers un retour à elles-mêmes 
                   à travers des méthodes douces et profondes dans un espace sûr à Ain Zaghouen.
                 </p>
-                
-                {/* Certifications */}
-                <div className="mt-6">
-                  <h4 className="font-semibold mb-3 text-primary">Certifications</h4>
-                  <div className="flex flex-wrap gap-2 text-sm">
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Access Bars Facilitator</span>
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Access FaceLift Practitioner</span>
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">ThetaHealing</span>
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Constellation Familiale</span>
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">PNL - Coaching</span>
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Reiki Master Teacher</span>
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Hypnose</span>
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Body Access</span>
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Soins énergétiques visage</span>
-                  </div>
-                </div>
               </div>
             </div>
+          </div>
+        </div>
+        
+        {/* Certifications Section - Full Width */}
+        <div className="mt-16 space-y-6">
+          <h2 className="text-2xl font-semibold text-center text-primary">Certifications & Spécialisations</h2>
+          <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+            <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-sm">Access Bars Facilitator</span>
+            <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-sm">Access FaceLift Practitioner</span>
+            <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-sm">ThetaHealing</span>
+            <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-sm">Constellation Familiale</span>
+            <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-sm">PNL – Coaching</span>
+            <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-sm">Reiki Master Teacher</span>
+            <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-sm">Hypnose</span>
+            <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-sm">Body Access</span>
+            <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-sm">Soins énergétiques visage</span>
           </div>
         </div>
       </div>
